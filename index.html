@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta name="theme-color" content="#241525">
+<title>Você é meu sol ☀️</title>
+<style>
+:root{--gold:#ffd18b;--cream:#fff1df;--wine:#281729}
+*{box-sizing:border-box}
+html{scroll-behavior:smooth}
+body{margin:0;background:#120e19;color:var(--cream);font-family:Georgia,serif}
+.hero{min-height:100svh;position:relative;display:flex;flex-direction:column;align-items:center;justify-content:center;text-align:center;padding:42px 20px 55px;overflow:hidden;background:radial-gradient(ellipse at 50% 72%,#f4a65b 0%,#a64e48 23%,#512b49 48%,#171321 78%)}
+.hero:before{content:"";position:absolute;inset:0;background:linear-gradient(180deg,#120e1933,transparent 55%,#120e19)}
+.sun{position:absolute;width:190px;height:190px;border-radius:50%;background:#ffca78;filter:blur(1px);opacity:.75;top:37%;box-shadow:0 0 70px 25px #ffb65a66}
+.hero-content{position:relative;z-index:1}
+h1{font-size:clamp(42px,9vw,76px);color:#ffe0a8;text-shadow:0 0 25px #ffb05b;margin:18px 0}
+.kicker{letter-spacing:4px;text-transform:uppercase;font:12px Arial,sans-serif;color:#ffe4c1}
+.hero p{max-width:590px;line-height:1.8;font-size:19px;margin:0 auto 22px}
+button{border:0;border-radius:30px;padding:14px 24px;background:linear-gradient(100deg,#b65d4a,#e9a45d);color:white;font-size:15px;cursor:pointer;box-shadow:0 8px 25px #0004}
+button:hover{filter:brightness(1.12)}
+section{max-width:900px;margin:auto;padding:76px 20px;text-align:center}
+h2{font-size:clamp(27px,5vw,38px);color:var(--gold);margin:0 0 25px}
+p{font-size:18px;line-height:1.9;color:#eadde8}
+.photo-wrap{max-width:440px;margin:0 auto 28px;padding:10px;border:1px solid #e9b77b;border-radius:22px;background:#ffffff12;box-shadow:0 0 45px #f0a65b35}
+.photo-wrap img{display:block;width:100%;height:auto;max-height:650px;object-fit:cover;border-radius:15px}
+.caption{font-style:italic;color:#ffdda9}
+.letter{background:linear-gradient(145deg,#2c1d30,#1c1725);border:1px solid #805b63;border-radius:20px;padding:30px 25px;box-shadow:0 15px 50px #0003}
+.letter p{margin:0 0 18px}
+.letter p:last-child{margin-bottom:0}
+.gold{color:#ffd18b;font-style:italic}
+.music{background:#211827;border:1px solid #72505c;border-radius:18px;padding:24px;margin:25px auto;max-width:650px}
+.music h3{color:#ffe0a8;margin:0 0 8px}
+.music small{color:#d8c3d0}
+#player{margin-top:20px;display:none;aspect-ratio:16/9}
+#player iframe{width:100%;height:100%;border:0;border-radius:12px}
+.final{background:radial-gradient(ellipse at center,#573047,#171321 72%);border-radius:22px;padding:38px 22px}
+#surpresa{display:none;color:#ffd18b;font-size:21px;line-height:1.9;margin-top:25px}
+footer{text-align:center;padding:35px 20px;color:#c7aebe;font-size:14px}
+.heart{position:fixed;bottom:-30px;color:#ffbd9c;pointer-events:none;animation:floatUp linear forwards;z-index:3}
+@keyframes floatUp{to{transform:translateY(-110vh) rotate(360deg);opacity:0}}
+@media(max-width:520px){section{padding:60px 17px}.letter{padding:24px 19px}.hero p{font-size:17px}}
+</style>
+</head>
+<body>
+<header class="hero">
+  <div class="sun"></div>
+  <div class="hero-content">
+    <div class="kicker">uma pequena declaração</div>
+    <h1>Você é meu sol ☀️</h1>
+    <p>Tem gente que chega e muda a luz dos nossos dias. Você tem esse jeito: ilumina até os momentos mais simples.</p>
+    <button onclick="document.getElementById('ela').scrollIntoView({behavior:'smooth'})">Tem algo que quero te mostrar ❤️</button>
+  </div>
+</header>
+
+<section id="ela">
+  <h2>A pessoa que me lembra o sol</h2>
+  <div class="photo-wrap">
+    <img src="foto-dela.jpg" alt="Foto especial dela">
+  </div>
+  <p class="caption">Seu cabelo iluminado, seu jeito e esse sorriso… há tanta beleza nos detalhes que fazem você ser você.</p>
+</section>
+
+<section>
+  <h2>Quero que você saiba...</h2>
+  <div class="letter">
+    <p>Às vezes eu penso em como algumas pessoas têm uma luz diferente. Quando penso nisso, lembro de você.</p>
+    <p>Você me lembra o sol. Não só pela beleza, mas por essa capacidade de deixar tudo mais bonito só por estar por perto.</p>
+    <p>Tem algo no seu jeito, no seu sorriso, no seu cabelo cheio de personalidade e até nas pequenas coisas que você faz que me encanta cada vez mais.</p>
+    <p class="gold">Eu quero você. Quero conhecer seus pensamentos, ouvir suas histórias, dividir risadas e estar por perto nos dias bons e nos difíceis também.</p>
+    <p>Não quero dizer que já conquistei seu coração, porque sei que isso não acontece só com palavras. Quero conquistar sua confiança e seu carinho com tempo, respeito e atitudes.</p>
+    <p>Não prometo ser perfeito. Mas posso ser sincero sobre uma coisa: minha vontade de me aproximar de você é real.</p>
+    <p class="gold">Se você é o sol, eu quero ter a chance de chegar mais perto dessa luz — um dia, uma conversa e um sorriso de cada vez.</p>
+    <p>Com carinho, de alguém que quer muito conquistar você. ❤️</p>
+  </div>
+</section>
+
+<section>
+  <h2>Uma música para acompanhar isso 🎸</h2>
+  <div class="music">
+    <h3>Wonderful Tonight — Eric Clapton</h3>
+    <small>1977 · Dê o play e leia tudo ouvindo essa canção.</small><br><br>
+    <button id="playButton" onclick="playMusic()">▶ Tocar nossa trilha sonora</button>
+    <div id="player"></div>
+  </div>
+  <p>Escolhi essa música porque ela tem a delicadeza de uma declaração que não precisa gritar para ser sentida.</p>
+</section>
+
+<section>
+  <div class="final">
+    <h2>Uma última coisa...</h2>
+    <p>Eu não sei exatamente o que o futuro reserva, mas sei o que gostaria de tentar construir.</p>
+    <button onclick="showSurprise()">Abrir sua surpresa 💌</button>
+    <div id="surpresa">
+      Eu quero conquistar você de verdade.<br>
+      Sem pressa, sem fingimento e sem promessas vazias.<br><br>
+      Quero que minhas atitudes façam você perceber o quanto é especial.<br><br>
+      <strong>Talvez eu ainda não seja parte da sua história como gostaria… mas adoraria ter a chance de ser. ❤️</strong>
+    </div>
+  </div>
+</section>
+<footer>Feito com carinho, especialmente para você. ☀️</footer>
+
+<script>
+function playMusic(){
+  const player=document.getElementById('player');
+  player.style.display='block';
+  player.innerHTML='<iframe src="https://www.youtube-nocookie.com/embed/UprwkbzUX6g?autoplay=1&rel=0" title="Wonderful Tonight — Eric Clapton" allow="autoplay; encrypted-media; picture-in-picture" allowfullscreen></iframe>';
+  document.getElementById('playButton').textContent='♫ Música iniciada';
+}
+function showSurprise(){document.getElementById('surpresa').style.display='block';}
+function createHeart(){
+  const h=document.createElement('span');
+  h.className='heart';h.textContent=Math.random()>.5?'♥':'♡';
+  h.style.left=Math.random()*100+'vw';
+  h.style.fontSize=(14+Math.random()*18)+'px';
+  h.style.animationDuration=(6+Math.random()*5)+'s';
+  document.body.appendChild(h);
+  setTimeout(()=>h.remove(),12000);
+}
+setInterval(createHeart,900);
+</script>
+</body>
+</html>
